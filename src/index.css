@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center
+    }
+}
+
+@layer components {
+    .button-menu {
+        @apply hover:bg-gray-100 p-2 rounded-lg focus:ring-2 focus:ring-gray-200 transition-all duration-300 lg:hidden
+    }
+
+    .button-bag {
+        @apply cursor-pointer shadow-md bg-white rounded-full h-12 w-12 flex-center fixed bottom-4 left-4 lg:static
+    }
+}
