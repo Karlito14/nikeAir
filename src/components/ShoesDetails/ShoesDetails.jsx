@@ -1,10 +1,12 @@
 export const ShoesDetails = ({img}) => {
     return (
-        <main className="flex flex-col lg:flex-row-reverse space-y-4">
-            <div className="flex-1">
-                <img src={img} alt="chaussure Nike" />
+        <main className="flex flex-col lg:flex-row-reverse mt-4 space-y-4 lg:space-y-0">
+            <div className="flex-1 lg:-mt-32 -z-10 lg:ml-28">
+                <div className="h-full flex-center bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]">
+                    <img src={img} alt="chaussure Nike" />
+                </div>
             </div>
-            <div className="flex-1 space-y-6">
+            <div className="flex-1 space-y-6 lg:mr-5">
                 <h1 className="text-5xl md:text-8xl">Nike Air Max 270</h1>
                 <p className="font-medium md:text-xl">La Nike Air Max 270 est une chaussure lifestyle qui ne manquera pas de faire tourner les têtes avec son dégradé de couleurs vibrantes.</p>
                 <p className="text-3xl font-extrabold md:text-6xl">100 €</p>
