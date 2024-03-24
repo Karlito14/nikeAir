@@ -1,4 +1,4 @@
-const ROUTES = ['Accueil', 'A propos', 'Services', 'Prix', 'Contact'];
+import { ROUTES } from '../../config/constantes';
 
 export const NavList = () => {
     return (
