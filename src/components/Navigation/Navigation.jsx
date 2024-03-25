@@ -17,7 +17,7 @@ export const Navigation = () => {
             <nav className={`${!displayNav ? 'hidden' : '' }hidden w-full lg:w-auto lg:block`}>
                 <NavList />
             </nav>
-            <div className='button-bag lg:mr-8'>
+            <div className='button-bag lg:mr-8 btn-press-animation'>
                 <TbShoppingBag />
             </div>
         </header>

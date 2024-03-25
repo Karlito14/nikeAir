@@ -6,7 +6,7 @@ import { useState } from 'react';
 export const App = () => {
     const [image, setImage] = useState(shoesImg)
     return (
-        <div className='p-10 xl:px-24'>
+        <div className='p-10 xl:px-24 animate-fadeIn'>
             <Navigation />
             <ShoesDetails img={image} />
         </div>
