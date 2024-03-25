@@ -2,7 +2,6 @@ import { Select } from '../Select/Select';
 import { SIZE, QUANTITY } from '../../config/constantes';
 
 export const ShoesDetails = ({shoe}) => {
-    console.log(shoe)
     return (
         <main className="flex flex-col lg:flex-row-reverse mt-4 space-y-4 lg:space-y-0">
             <div className="flex-1 lg:-mt-36 -z-10 lg:ml-28">
