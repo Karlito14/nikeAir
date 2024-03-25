@@ -5,7 +5,22 @@ export default {
         './src/**/*.{js,ts,jsx,tsx}'
     ],
     theme: {
-        extend: {},
+        extend: {
+            keyframes: {
+                float : {
+                    '0%, 100%': { transform : 'translateY(0)' },
+                    '50%': { transform : 'translateY(-10px)' }
+                },
+                fadeIn : {
+                    'from': {opacity : '0'},
+                    'to': {opacity : '1'},
+                }
+            },
+            animation: {
+                float: 'float 3s ease-in-out infinite',
+                fadeIn: 'fadeIn 1s ease-in-out'
+            },
+        },
     },
     plugins: [],
 }

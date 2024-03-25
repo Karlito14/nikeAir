@@ -1,8 +1,32 @@
-# React + Vite
+# Nike Air
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nike Air est un site web qui permet d'ajouter à son panier la paire de basket de son choix
 
-Currently, two official plugins are available:
+### Objectifs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Créer le front end d'un e-commerce
+- Apprendre **Tailwind** (responsive, animations, etc.)
+
+### Maquette
+
+
+
+### Instructions
+
+- Réaliser le site avec **React**
+- Un dossier par composant
+- Chaque dossier devra contenir le JSX, le CSS et le JS, si besoin, du composant en question
+- Utilisation de **Tailwind** pour le CSS
+
+### Tester le projet
+
+Pour tester le projet :
+
+Cliquez ici ou :
+- Cloner le github
+- Ouvrir votre terminal et taper la commande suivante **npm i** afin d'installer les dépendances nécessaires
+- Taper **npm run dev** pour lancer le projet et le visualiser
+
+
+Réalisé par [Carlos Leiroz](https://www.linkedin.com/in/carlos-leiroz/)
+
