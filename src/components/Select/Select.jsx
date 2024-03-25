@@ -9,7 +9,7 @@ export const Select = ({ title, listOption }) => {
                     return <option key={option} value={option}>{option}</option>
                 })}
             </select>
-            <IoIosArrowDown className='absolute inset-y-0 flex-center right-3 top-1/2 -translate-y-1/2' />
+            <IoIosArrowDown className='pointer-events-none absolute inset-y-0 flex-center right-3 top-1/2 -translate-y-1/2' />
         </div>
     )
 };
