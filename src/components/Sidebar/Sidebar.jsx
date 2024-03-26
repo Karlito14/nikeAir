@@ -5,6 +5,7 @@ export const Sidebar = ({ children, isOpen, closeSidebar }) => {
                 <button className="absolute top-4 right-4 p-2 font-bold" onClick={() => closeSidebar(false)}>X</button>
                 <h3 className="text-2xl text-center font-semibold">Mon panier</h3>
                 {children}
+                <button className="text-center text-xl px-8 py-4 font-bold mt-10 text-white mx-auto block transition bg-black hover:bg-gray-900">Finaliser ma commande</button>
             </aside>
             {isOpen && <div className="fixed top-0 left-0 z-20 h-full w-full bg-black opacity-50"></div>}
         </>
