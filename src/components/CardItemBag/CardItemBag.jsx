@@ -4,7 +4,7 @@ import { Select } from '../Select/Select';
 
 export const CardItemBag = ({ itemList, updateBag }) => {
     const deleteProduct = (itemClicked) => {
-        return updateBag(bag => {
+        updateBag(bag => {
             return bag.filter(item => {
                 return item.id !== itemClicked.id || item.quantity !== itemClicked.quantity || item.size !== itemClicked.size;
             })
