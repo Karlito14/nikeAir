@@ -15,7 +15,7 @@ export const App = () => {
         <div className={'p-10 xl:px-24 animate-fadeIn'} onClick={() => setDisplayAside(false)}>
             <Navigation openSidebar={setDisplayAside} />
             {data && <ShoesDetails shoe={data} updateBag={setBag} />}
-            {SHOE_LIST.length > 0 && <CardList data={SHOE_LIST} updateShoe={setData} updateBag={setBag} />}
+            {SHOE_LIST.length > 0 && <CardList data={SHOE_LIST} updateShoe={setData} />}
             <Sidebar isOpen={displayAside} closeSidebar={setDisplayAside}>
                 <CardItemBag itemList={bag} />
             </Sidebar>
