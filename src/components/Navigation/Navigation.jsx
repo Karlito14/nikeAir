@@ -12,7 +12,7 @@ export const Navigation = ({ openSidebar }) => {
                 <img src={logo} alt='logo Nike' className='h-20 w-20' />
             </a>
             <button className='button-menu' onClick={() => setDisplayNav(!displayNav)}>
-                <RxHamburgerMenu size={25} />
+                <RxHamburgerMenu size={25} className='dark:text-white' />
             </button>
             <nav className={`${!displayNav ? 'hidden' : '' }hidden w-full lg:w-auto lg:block`}>
                 <NavList />
