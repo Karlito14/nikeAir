@@ -1,7 +1,11 @@
 import { Select } from '../Select/Select';
 import { SIZE, QUANTITY } from '../../config/constantes';
 
-export const ShoesDetails = ({shoe}) => {
+export const ShoesDetails = ({shoe, updateBag}) => {
+    const onClick = () => {
+        updateBag(arr => [...arr, shoe])
+    };
+
     return (
         <main className="flex flex-col lg:flex-row-reverse mt-4 space-y-4 lg:space-y-0">
             <div className="flex-1 lg:-mt-36 -z-10 lg:ml-28">
@@ -18,7 +22,7 @@ export const ShoesDetails = ({shoe}) => {
                     <Select title={'Taille'} listOption={SIZE} />
                 </div>
                 <div className="space-y-4 flex flex-col sm:flex-row sm:space-x-4">
-                    <button className="btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">Ajouter au panier</button>
+                    <button className="btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700" onClick={ onClick }>Ajouter au panier</button>
                     <a href="#" className="underline underline-offset-4 text-lg font-bold">Plus de détails</a>
                 </div>
             </div>

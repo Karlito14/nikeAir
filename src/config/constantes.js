@@ -13,7 +13,7 @@ const SHOE_LIST = [
         className: 'bg-[#EEFFA4]',
         title: 'Nike Air Max 270',
         description:
-        'The Nike Air Max 270 is a lifestyle shoe that\'s sure to turn heads with its vibrant color gradient.',
+        'La Nike Air Max 270 est une chaussure lifestyle qui ne manquera pas de faire tourner les têtes avec son dégradé de couleurs vibrantes.',
         price: 160,
     },
     {
@@ -22,7 +22,7 @@ const SHOE_LIST = [
         className: 'bg-[#DDCEFD]',
         title: 'Nike Air Vapor',
         description:
-        'The Nike Air Vapor is a sleek and stylish shoe that\'s perfect for any occasion. It\'s the perfect shoe for any active lifestyle.',
+        'La Nike Air Vapor est une chaussure élégante et stylée, parfaite pour toutes les occasions. C\'est la chaussure idéale pour tout style de vie actif.',
         price: 100,
     },
     {
@@ -31,7 +31,7 @@ const SHOE_LIST = [
         className: 'bg-[#DAFFA2]',
         title: 'Nike Air Max 2090',
         description:
-        'The Nike Air Max 2090 is shoe that\'s both stylish and comfortable. It\'s the perfect shoe for any fashion-forward individual.',
+        'La Nike Air Max 2090 est une chaussure à la fois élégante et confortable. C\'est la chaussure parfaite pour tout individu à la pointe de la mode.',
         price: 150,
     },
     {
@@ -40,7 +40,7 @@ const SHOE_LIST = [
         className: 'bg-[#FCC4EA]',
         title: 'Nike Air Blazer',
         description:
-        'The Nike Air Blazer is a classic shoe that\'s perfect for any casual occasion. It\'s the perfect shoe for any laid-back individual.',
+        'La Nike Air Blazer est une chaussure classique, parfaite pour toutes les occasions décontractées. C\'est la chaussure idéale pour tout individu décontracté.',
         price: 110,
     },
 ];
