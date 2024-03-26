@@ -2,7 +2,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 export const Select = ({ title, id, listOption, sizeSelect, padding, onChange, defaultValue }) => {
     return (
-        <div className='relative'>
+        <div className='relative dark:text-black'>
             <select id={id} defaultValue={defaultValue ?? ''} className={`${sizeSelect} appearance-none border border-gray-300 ${padding} cursor-pointer bg-white`} onChange={onChange ? (event) => onChange(event.target.value): null}>
                 <option value={''} disabled hidden>{title}</option>
                 {listOption.map(option => {

@@ -18,12 +18,12 @@ export const ShoesDetails = ({shoe, updateBag}) => {
 
     return (
         <main className="flex flex-col lg:flex-row-reverse mt-4 space-y-4 lg:space-y-0">
-            <div className="flex-1 lg:-mt-36 -z-10 lg:ml-28">
+            <div className="flex-1 lg:-mt-36 lg:-z-0 lg:ml-28">
                 <div className="h-full flex-center bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]">
                     <img src={shoe.src} alt="chaussure Nike" className='animate-float' />
                 </div>
             </div>
-            <div className="flex-1 space-y-6 lg:mr-5">
+            <div className="flex-1 space-y-6 lg:mr-5 dark:text-white">
                 <h1 className="text-5xl md:text-8xl">{shoe.title}</h1>
                 <p className="font-medium md:text-xl">{shoe.description}</p>
                 <div className='flex items-center space-x-2 md:space-x-6'>
@@ -45,7 +45,12 @@ export const ShoesDetails = ({shoe, updateBag}) => {
                 </div>
                 {error && <p className='text-lg text-red-400 font-bold'>Veuillez choisir une quantité et une taille</p>}
                 <div className="space-y-4 flex flex-col sm:flex-row sm:space-x-4">
-                    <button className="btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700" onClick={ onClick }>Ajouter au panier</button>
+                    <button 
+                        className="btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700" 
+                        onClick={ onClick }
+                    >
+                        Ajouter au panier
+                    </button>
                     <a href="#" className="underline underline-offset-4 text-lg font-bold">Plus de détails</a>
                 </div>
             </div>
