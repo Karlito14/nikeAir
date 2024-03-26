@@ -17,7 +17,7 @@ export const App = () => {
             {data && <ShoesDetails shoe={data} updateBag={setBag} />}
             {SHOE_LIST.length > 0 && <CardList data={SHOE_LIST} updateShoe={setData} />}
             <Sidebar isOpen={displayAside} closeSidebar={setDisplayAside}>
-                <CardItemBag itemList={bag} />
+                {bag && <CardItemBag itemList={bag} updateBag={setBag} />}
             </Sidebar>
         </div>
     )
