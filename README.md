@@ -9,7 +9,7 @@ Nike Air est un site web qui permet d'ajouter à son panier la paire de basket d
 
 ### Maquette
 
-![Maquette du site](./maquette/maquette.jpg "Maquette Nike Airmax")
+![Maquette du site en desktop](./maquette/maquette.jpg "Maquette Nike Airmax")
 
 ### Instructions
 
