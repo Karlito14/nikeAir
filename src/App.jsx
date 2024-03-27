@@ -26,7 +26,7 @@ export const App = () => {
         } else {
             localStorage.setItem('isDark', 'false');
         }
-    }
+    };
     
     return (
         <div className={'p-10 xl:px-24 animate-fadeIn dark:bg-slate-900'} onClick={() => setDisplayAside(false)}>
@@ -44,5 +44,5 @@ export const App = () => {
                 </button>
             </div>
         </div>
-    )
+    );
 };

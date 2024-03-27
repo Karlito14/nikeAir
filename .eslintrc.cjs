@@ -20,5 +20,6 @@ module.exports = {
     ],
     quotes: ["error", "single"],
     indent: ['error', 4, { SwitchCase: 1 }],
+    semi: ["error", "always"]
   },
 }

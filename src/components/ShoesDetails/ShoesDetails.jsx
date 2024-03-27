@@ -5,14 +5,23 @@ import { useState } from 'react';
 export const ShoesDetails = ({shoe, updateBag}) => {
     const [quantity, setQuantity] = useState();
     const [size, setSize] = useState();
-    const [error, setError] = useState(false)
+    const [error, setError] = useState(false);
 
-    const onClick = () => {
+    const onClick = (product, size, quantity) => {
         if(!quantity || !size) {
-            setError(true)
+            setError(true);
         } else {
-            setError(false)
-            updateBag(arr => [...arr, {...shoe, quantity: quantity, size: size} ]);
+            setError(false);
+            updateBag(arr => {
+                const existing = arr.findIndex(item => item.id === product.id && item.size === size);
+                if (existing === -1) {
+                    return [...arr, {...shoe, quantity: quantity, size: size}];
+                } else {
+                    const copyArr = [...arr];
+                    copyArr[existing].quantity = quantity;
+                    return copyArr;
+                }
+            });
         }
     };
 
@@ -47,7 +56,7 @@ export const ShoesDetails = ({shoe, updateBag}) => {
                 <div className="space-y-4 flex flex-col sm:flex-row sm:space-x-4">
                     <button 
                         className="btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700" 
-                        onClick={ onClick }
+                        onClick={() => onClick(shoe, size, quantity)}
                     >
                         Ajouter au panier
                     </button>
@@ -55,5 +64,5 @@ export const ShoesDetails = ({shoe, updateBag}) => {
                 </div>
             </div>
         </main>
-    )
+    );
 };

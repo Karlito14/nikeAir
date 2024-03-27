@@ -11,5 +11,5 @@ export const Card = ({ item, clickItem }) => {
             </div>
             <img src={item.src} alt={item.title} className="h-40 w-56 absolute top-5 left-[45%]" />
         </div>
-    )
-}
+    );
+};

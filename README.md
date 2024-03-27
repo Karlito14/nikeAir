@@ -1,4 +1,4 @@
-# Nike Air
+# [Nike Air](https://e-airmax.netlify.app/)
 
 Nike Air est un site web qui permet d'ajouter à son panier la paire de basket de son choix
 
@@ -9,7 +9,7 @@ Nike Air est un site web qui permet d'ajouter à son panier la paire de basket d
 
 ### Maquette
 
-
+![Maquette du site](./maquette/maquette.jpg "Maquette Nike Airmax")
 
 ### Instructions
 
@@ -22,7 +22,7 @@ Nike Air est un site web qui permet d'ajouter à son panier la paire de basket d
 
 Pour tester le projet :
 
-Cliquez ici ou :
+Cliquez [ici](https://e-airmax.netlify.app/) ou :
 - Cloner le github
 - Ouvrir votre terminal et taper la commande suivante **npm i** afin d'installer les dépendances nécessaires
 - Taper **npm run dev** pour lancer le projet et le visualiser

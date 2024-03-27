@@ -24,5 +24,5 @@ export const Navigation = ({ openSidebar }) => {
                 <TbShoppingBag />
             </div>
         </header>
-    )
+    );
 };

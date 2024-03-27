@@ -26,4 +26,20 @@
     .button-bag {
         @apply cursor-pointer shadow-md bg-white rounded-full h-12 w-12 flex-center fixed bottom-4 left-4 lg:static
     }
+
+    .sidebar {
+        @apply z-50 top-0 right-0 fixed h-full w-full bg-white p-8 transition duration-300 overflow-auto md:w-1/2 lg:w-[35%] dark:bg-slate-900
+    }
+
+    .ul-element {
+        @apply bg-gray-50 text-lg border border-gray-100 rounded-lg p-4 flex flex-col lg:flex-row lg:border-none lg:bg-transparent lg:space-x-8
+    }
+
+    .div-section-list {
+        @apply justify-between grid grid-cols-1 gap-y-20 md:grid-cols-2 gap-x-6 xl:grid-cols-[repeat(3,30%)]
+    }
+
+    .div-cart {
+        @apply p-2 mt-10 hover:bg-[#DAFFA2] transition cursor-pointer bg-gray-50 space-y-2 dark:bg-transparent dark:hover:bg-slate-700
+    }
 }

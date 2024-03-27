@@ -7,13 +7,13 @@ export const CardItemBag = ({ itemList, updateBag }) => {
         updateBag(bag => {
             return bag.filter(item => {
                 return item.id !== itemClicked.id || item.quantity !== itemClicked.quantity || item.size !== itemClicked.size;
-            })
-        })
+            });
+        });
     };
 
     return itemList.map(item => {
         return (
-            <div key={`${item.id}-${item.size}-${item.quantity}`} className='p-2 mt-10 hover:bg-[#DAFFA2] transition cursor-pointer bg-gray-50 space-y-2 dark:bg-transparent dark:hover:bg-slate-700'>
+            <div key={`${item.id}-${item.size}-${item.quantity}`} className='div-cart'>
                 <div className="flex space-x-2">
                     <img className="h-24" src={item.src} />
                     <div className="space-y-2">
@@ -38,6 +38,6 @@ export const CardItemBag = ({ itemList, updateBag }) => {
                     </button>
                 </div>
             </div>
-        )
-    })
+        );
+    });
 };
