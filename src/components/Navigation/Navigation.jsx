@@ -11,7 +11,7 @@ export const Navigation = ({ openSidebar }) => {
             <a href='#'>
                 <img src={logo} alt='logo Nike' className='h-20 w-20' />
             </a>
-            <button className='button-menu' onClick={() => setDisplayNav(!displayNav)}>
+            <button className='button-menu' onClick={() => setDisplayNav(!displayNav)} aria-label='Ouvrir le manu navigation'>
                 <RxHamburgerMenu size={25} className='dark:text-white' />
             </button>
             <nav className={`${!displayNav ? 'hidden' : '' }hidden w-full lg:w-auto lg:block`}>

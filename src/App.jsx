@@ -38,7 +38,7 @@ export const App = () => {
                 {bag.length === 0 && <p className='text-center mt-10 text-xl'>Votre panier est vide</p>}
             </Sidebar>
             <div className='fixed bottom-4 right-4 px-4 py-2 cursor-pointer bg-gray-900 rounded-full flex-center text-white dark:bg-white dark:text-black dark:shadow-[0_5px_8px_rgba(0,0,0,0.3)]' onClick={toggleDarkmode}>
-                <button>
+                <button aria-label='Changer le mode du site'>
                     <BiSun className='hidden dark:block' />
                     <BiMoon className='block dark:hidden' />
                 </button>
