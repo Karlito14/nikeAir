@@ -7,6 +7,9 @@ export default {
     darkMode: 'class',
     theme: {
         extend: {
+            backgroundImage: {
+                lines: 'url("src/assets/lines.png")',
+            },
             keyframes: {
                 float : {
                     '0%, 100%': { transform : 'translateY(0)' },
