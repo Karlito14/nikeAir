@@ -8,7 +8,7 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                lines: 'url("src/assets/lines.png")',
+                lines: 'url("assets/lines.png")',
             },
             keyframes: {
                 float : {
